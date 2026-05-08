@@ -12,123 +12,142 @@
 
 ## 🚀 About Me
 
-I'm a developer who loves turning ideas into real, working software — from AI-powered automation agents to mobile apps and browser tools. I build things that scratch my own itch and help others do more with less effort.
+I'm a developer obsessed with automation, AI agents, and building tools that eliminate repetitive work. Most of my projects live in private repos — I ship first, then decide whether to open-source.
 
-- 🔭 Currently building **AI agents** that automate real-world workflows (job applications, web scraping, trading)
-- 🌱 Exploring **LangChain**, **Ollama**, **Flutter**, and **Firebase**
-- ⚡ Fun fact: I'd rather automate a boring task than do it twice
-- 📍 Based in the US
+- 🔭 Building **AI agents** that operate browsers, fill forms, and make decisions autonomously
+- 🌱 Deep in **LangChain**, **Ollama** (local LLMs), **Flutter**, and **Firebase**
+- ⚡ Philosophy: if you do it more than twice, automate it
+- 📍 US-based
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Languages & Technologies
 
 <div align="center">
+
+**Languages**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+**AI / LLM**
 
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![PyAutoGUI](https://img.shields.io/badge/PyAutoGUI-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+**Mobile / Web**
+
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
+
+**Automation & Infra**
+
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Web Speech API](https://img.shields.io/badge/Web_Speech_API-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 </div>
 
 ---
 
-## 🔥 Featured Projects
+## 🔥 What I Build
 
-### 🤖 [WebScapper](https://github.com/munna369/WebScapper) — LangChain Job Application Agent
-> **Python • LangChain • Ollama • Playwright • PyAutoGUI**
+> Most of my work is in private repositories. Below is a breakdown of the types of projects I've shipped and the technologies behind them.
 
-A self-planning AI agent that fills job application forms automatically. Features a 4-layer memory system (coordinate cache, screen hash cache, answer cache, episode store) that cuts form-fill time from ~4 minutes to ~45 seconds on repeat runs.
+### 🤖 AI Browser Automation Agents
+`Python` `LangChain` `Ollama` `Playwright` `PyAutoGUI` `SQLite` `Vision LLMs`
 
-- 🧠 ReAct AgentExecutor with loop-guard and auto-replan
-- 👁️ Vision model reads the screen; reasoning model plans actions
-- ⚡ Playwright CDP mode is 5–10x faster than PyAutoGUI
-- 🎮 Live terminal REPL with `/plan`, `/approve`, `/todo` commands
-
----
-
-### 📊 [PollingPolls](https://github.com/munna369/PollingPolls) — Social Poll App
-> **Flutter • Dart • Firebase • Provider**
-
-A lightweight social-media Flutter app built around poll interactions. Users create posts with embedded polls, vote in real time, explore trending content, and receive push notifications.
-
-- 🔥 Firebase Firestore, Auth, Storage & Cloud Messaging
-- 📱 Runs on Android, iOS, and Web from a single codebase
-- 🏗️ Clean architecture: features / domain / data / services layers
+- Agents that visually read screens using multimodal LLMs and take autonomous actions
+- Multi-layer memory systems: coordinate cache, perceptual hash cache, answer cache, episode store
+- ReAct planning loops with self-replan on failure
+- Live REPL interface for human-in-the-loop oversight
+- Achieves **sub-1-minute repeat task completion** through learned memory
 
 ---
 
-### 🧩 [NoCodeAppBuilder](https://github.com/munna369/NoCodeAppBuilder) — AI-Powered App Generator
-> **JavaScript • Ollama**
+### 📱 Cross-Platform Mobile Apps
+`Flutter` `Dart` `Firebase Firestore` `Firebase Auth` `Firebase Storage` `FCM` `Provider`
 
-A no-code app builder that runs entirely on local LLMs via Ollama. Describe what you want and the agent generates a working app — no cloud API keys required.
-
----
-
-### 🔌 [Chrome_Contact_Capture](https://github.com/munna369/Chrome_Contact_Capture) — Chrome Extension
-> **JavaScript • Chrome Extension API**
-
-A clean Chrome extension that captures and organises contact information directly from web pages, streamlining lead generation and outreach workflows.
+- Full-stack Flutter apps running on Android, iOS, and Web from a single codebase
+- Real-time data sync with Firestore, push notifications via Cloud Messaging
+- Clean architecture: feature-layer separation, domain/data/presentation pattern
+- Social features: feeds, voting systems, user profiles, media uploads
 
 ---
 
-### 📧 [email_extractror](https://github.com/munna369/email_extractror) — Email Extractor
-> **Python**
+### 🤖 Local LLM-Powered App Generators
+`JavaScript` `Node.js` `Ollama` `Local LLMs`
 
-A simple but powerful Python script that extracts email addresses from web pages and documents to accelerate job marketing and outreach campaigns.
-
----
-
-### 📈 [trading-bot](https://github.com/munna369/trading-bot) — Automated Trading Bot
-> **Python**
-
-An automated trading bot written in Python, designed to execute strategies and manage positions programmatically.
+- No-code generation pipelines driven entirely by locally-running language models
+- Zero cloud API dependency — runs fully offline
+- Describe a tool in plain English; receive a working app
 
 ---
 
-### 🎙️ [Voice-Extension](https://github.com/munna369/Voice-Extension) — ChatGPT Voice Input
-> **JavaScript • Web Speech API • Chrome Extension**
+### 🔌 Browser Extensions
+`JavaScript` `Chrome Extension API` `Web Speech API` `Manifest V3`
 
-A Chrome extension that adds voice input to ChatGPT's interface using the Web Speech API — hands-free prompting made easy.
-
----
-
-### 🐛 [BUGREPORT](https://github.com/munna369/BUGREPORT)
-> **C**
-
-A C-based bug reporting utility.
+- Chrome extensions for productivity: contact capture, voice input injection, data extraction
+- Seamless integration with third-party web apps (e.g. ChatGPT voice interface overlay)
+- Background service workers, content scripts, popup UIs
 
 ---
 
-### 🐍 [PythonBatchNovDec2024](https://github.com/munna369/PythonBatchNovDec2024) — Python Course Notes
-> **Jupyter Notebook • Python**
+### 🐍 Data Extraction & Outreach Automation
+`Python` `Web Scraping` `Email Automation`
 
-Class notebooks and exercises from a Python batch course (Nov–Dec 2024). A great reference for Python fundamentals.
+- Scripts that extract structured data (emails, contacts) from unstructured web sources
+- Automated outreach pipeline tooling for job marketing and lead generation
 
 ---
 
-## 📊 GitHub Stats
+### 📈 Algorithmic Trading Bots
+`Python` `Trading APIs` `Strategy Automation`
 
-<div align="center">
+- Automated position management and strategy execution
+- Programmatic trade lifecycle: signal → entry → exit → logging
 
-![munna369's GitHub Stats](https://github-readme-stats.vercel.app/api?username=munna369&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+---
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=munna369&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+### 🐛 Systems Programming
+`C` `Low-level utilities`
 
-![GitHub Streak](https://streak-stats.demolab.com?user=munna369&theme=tokyonight&hide_border=true)
+- Command-line tooling written in C for performance-critical tasks
 
-</div>
+---
+
+## 📊 Skills at a Glance
+
+```
+AI & Automation     █████████░  Expert
+Python              ████████░░  Advanced
+JavaScript          ███████░░░  Advanced
+Flutter / Dart      ███████░░░  Advanced
+Firebase / Firestore ███████░░░  Advanced
+LangChain / LLMs    ████████░░  Advanced
+Browser Automation  ████████░░  Advanced
+Chrome Extensions   ██████░░░░  Proficient
+C / Systems         ████░░░░░░  Intermediate
+```
+
+---
+
+## 💫 What Makes My Work Different
+
+| | |
+|---|---|
+| 🧠 **AI-first approach** | I reach for LLMs as reasoning engines, not just chatbots |
+| 🔒 **Mostly private** | I build to solve real problems, not to collect stars |
+| ⚡ **Speed-obsessed** | Every project has a caching or acceleration layer |
+| 👀 **Vision-aware** | I work with multimodal models that see and act on screens |
+| 🔧 **Full-stack** | From C to Flutter to LangChain agents — I pick the right tool |
 
 ---
 
@@ -138,7 +157,7 @@ Class notebooks and exercises from a Python batch course (Nov–Dec 2024). A gre
 
 [![GitHub](https://img.shields.io/badge/GitHub-munna369-181717?style=for-the-badge&logo=github)](https://github.com/munna369)
 
-*Open to collaborations, freelance work, and interesting conversations about AI, automation, and building things.*
+*Open to collaborations, freelance work, and interesting problems in AI, automation, and mobile.*
 
 </div>
 
@@ -146,6 +165,6 @@ Class notebooks and exercises from a Python batch course (Nov–Dec 2024). A gre
 
 <div align="center">
 
-⭐ **If you find any of my projects useful, a star goes a long way!** ⭐
+*“Most of the best code never gets seen — it just works.”*
 
 </div>
