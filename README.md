@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hey, I'm munna369 👋
+# Hey, I'm Ritish-Sajja 👋
 
 ### Builder • Tinkerer • Automation Enthusiast
 
